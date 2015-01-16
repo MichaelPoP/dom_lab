@@ -1,0 +1,40 @@
+window.addEventListener("load", function () {
+//#1....................(using .addEventListener)
+
+	
+	document.getElementById("greeting").innerHTML = "Hello, Planet Earth!";
+
+
+
+
+//#2....................(using .onload)
+
+//window.onload = foo;
+
+
+var back = document.getElementById("essentials").style.backgroundColor = "yellow";
+console.log(back);
+
+
+
+//#3 + #4.....................(use event.target @ some point)
+
+function addClass(event) {
+
+	event.target.setAttribute("class", "selected");
+	
+	document.querySelector("img").setAttribute("src", "./images/" + event.target.innerHTML+ ".jpeg");
+	console.log(img);
+}
+
+ var selector = document.getElementsByTagName("li");
+ console.log(selector);
+  
+   for (var i=0; i < selector.length; i++) {
+
+       selector[i].addEventListener("click", addClass);
+       
+
+}
+
+});

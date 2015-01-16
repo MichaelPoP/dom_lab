@@ -26,7 +26,10 @@ In `app.js`, write the necessary JavaScript to:
 
 2. set the `backgroundColor` of each `<li>` to `yellow`.
 
-3. add the class of `selected` to an `<li>` when it is clicked.
+
+
+
+3. ADD the class of `selected` to an `<li>` when it is clicked.
 
 4. change the image to be the last clicked food item.
 
